@@ -1,8 +1,16 @@
 # Demo API
+Deployed with GitHub Actions and Heroku
 
-This demo api is run by opening port 8000 and making a GET request to endpoint: http://localhost:8000/ping 
+## Test the API
+```bash
+curl https://[host]/items/5?q=somequery
+```
+
+
 
 ## Deploying the API
-```bash
-docker run -p 8000:8000 okaj/demo_api
-```
+1. Make a code change
+2. Commit (or merge) to main branch
+3. Github actions will deploy to Heroku
+
+Code adapted from https://github.com/tiangolo/uvicorn-gunicorn-fastapi-docker
