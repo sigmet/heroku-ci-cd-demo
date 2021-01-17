@@ -3,7 +3,7 @@ Deployed with GitHub Actions and Heroku
 
 ## Test the API
 ```bash
-curl https://[host]/items/5?q=somequery
+curl https://heroku-ci-cd-demo.herokuapp.com/items/5?q=somequery
 ```
 
 
